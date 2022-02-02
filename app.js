@@ -1,6 +1,10 @@
 const app = Vue.createApp({
   data() {
-    return {};
+    return {
+      boxAselected: false,
+      boxBselected: false,
+      boxCselected: false,
+    };
   },
 });
 app.mount("#styling");
