@@ -7,11 +7,15 @@ const app = Vue.createApp({
     };
   },
   methods: {
-    boxSelected(box){
-      box === 'A' ? this.boxASelected = true
-      : box === 'B' ? this.boxBSelected = true 
-      : box === 'C' ? this.boxCSelected = true;
-    }
-  }
+    boxSelected(box) {
+      box === "A"
+        ? (this.boxASelected = true)
+        : box === "B"
+        ? (this.boxBSelected = true)
+        : box === "C"
+        ? (this.boxCSelected = true)
+        : false;
+    },
+  },
 });
 app.mount("#styling");
